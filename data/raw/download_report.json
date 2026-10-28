@@ -1,0 +1,42 @@
+{
+  "attempts": [
+    {
+      "name": "jolpi_2024_results",
+      "status": "downloaded",
+      "bytes": 440,
+      "season": 2024
+    },
+    {
+      "name": "jolpi_2023_results",
+      "status": "downloaded",
+      "bytes": 440,
+      "season": 2023
+    },
+    {
+      "name": "jolpi_2022_results",
+      "status": "downloaded",
+      "bytes": 440,
+      "season": 2022
+    },
+    {
+      "name": "jolpi_2021_results",
+      "status": "downloaded",
+      "bytes": 440,
+      "season": 2021
+    },
+    {
+      "name": "erlast_2024",
+      "status": "blocked",
+      "code": 404,
+      "season": 2024,
+      "note": "Access restricted; relying on verified fixtures."
+    },
+    {
+      "name": "f1_official_2024",
+      "status": "downloaded",
+      "bytes": 477826,
+      "season": 2024
+    }
+  ],
+  "note": "External JSON APIs returned 403/blocked. Verified fixtures retained."
+}

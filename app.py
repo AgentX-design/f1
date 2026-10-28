@@ -30,7 +30,8 @@ def suggested():
         "Who won the 2022 Constructors' Championship?",
         "Show 2024 Drivers' Championship standings.",
         "Give 2023 race winners.",
-        "Which 2024 weekends had sprint races?"
+        "Which 2024 weekends had sprint races?",
+        "Who won the 2025 Drivers' Championship?"
     ])
 
 @app.route('/api/chat', methods=['POST'])

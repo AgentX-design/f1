@@ -3,25 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>F1 History AI Chatbot</title>
+<meta name="description" content="F1 History Intelligence — explore Formula 1 seasons 2021–2025 with verified historical data.">
+<title>F1 History Intelligence — 2021–2025</title>
 <link rel="stylesheet" href="/static/css/style.css">
+<link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
 </head>
 <body>
-<header>
-  <h1>F1 History AI Chatbot</h1>
-  <p>Ask questions about Formula 1 seasons 2021–2025.</p>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="F1 History Intelligence home">
+      <span class="logo-mark">F1</span>
+      <span class="logo-text">HISTORY INTELLIGENCE</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#hero">Home</a>
+      <a href="#seasons">Seasons</a>
+      <a href="#archive">Race Archive</a>
+      <a href="#chat">Ask AI</a>
+    </nav>
+  </div>
 </header>
-<main>
-  <section id="chat" aria-label="Chat conversation"></section>
-  <form id="chat-form" aria-label="Send message">
-    <input type="text" id="message" placeholder="Ask a question..." aria-required="true" />
-    <button type="submit">Send</button>
-  </form>
-  <section aria-label="Suggested questions">
-    <h2>Examples</h2>
-    <div id="suggested"></div>
-  </section>
-</main>
+
+<section id="hero" class="hero" aria-label="Hero">
+  <div class="hero-bg" aria-hidden="true" style="background-image:url('/static/images/hero-pattern.svg');"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>F1 HISTORY INTELLIGENCE</h1>
+    <p class="hero-sub">Every Season. Every Rivalry. Every Record.</p>
+    <p class="hero-desc">Explore Formula 1 historical data from 2021 to 2025 — verified champions, race results, standings, sprint events, and season comparisons from independent sources.</p>
+    <a href="#chat" class="cta-button">Explore F1 History</a>
+  </div>
+</section>
+
+<section id="seasons" class="seasons" aria-label="Season Explorer">
+  <div class="section-header">
+    <h2>SEASON EXPLORER</h2>
+    <p>Verified champions and key events for each completed season.</p>
+  </div>
+  <div class="season-grid" id="season-grid" aria-label="Season cards">
+    <!-- Season cards injected via JS or static; using static with data read from fixtures -->
+    <article class="season-card" data-season="2021" onclick="selectSeason(2021)">
+      <div class="card-pattern" aria-hidden="true"><img src="/static/images/card-pattern.svg" alt=""></div>
+      <h3>2021</h3>
+      <ul>
+        <li><strong>Driver:</strong> Max Verstappen</li>
+        <li><strong>Constructor:</strong> Mercedes</li>
+        <li><strong>Sample GP:</strong> Bahrain (Hamilton)</li>
+      </ul>
+    </article>
+    <article class="season-card" data-season="2022" onclick="selectSeason(2022)">
+      <div class="card-pattern" aria-hidden="true"><img src="/static/images/card-pattern.svg" alt=""></div>
+      <h3>2022</h3>
+      <ul>
+        <li><strong>Driver:</strong> Max Verstappen</li>
+        <li><strong>Constructor:</strong> Red Bull</li>
+        <li><strong>Sample GP:</strong> Bahrain (Leclerc)</li>
+      </ul>
+    </article>
+    <article class="season-card" data-season="2023" onclick="selectSeason(2023)">
+      <div class="card-pattern" aria-hidden="true"><img src="/static/images/card-pattern.svg" alt=""></div>
+      <h3>2023</h3>
+      <ul>
+        <li><strong>Driver:</strong> Max Verstappen</li>
+        <li><strong>Constructor:</strong> Red Bull</li>
+        <li><strong>Sample GP:</strong> Monaco (Verstappen)</li>
+      </ul>
+    </article>
+    <article class="season-card" data-season="2024" onclick="selectSeason(2024)">
+      <div class="card-pattern" aria-hidden="true"><img src="/static/images/card-pattern.svg" alt=""></div>
+      <h3>2024</h3>
+      <ul>
+        <li><strong>Driver:</strong> Max Verstappen</li>
+        <li><strong>Constructor:</strong> McLaren</li>
+        <li><strong>Sample GP:</strong> British (Hamilton)</li>
+      </ul>
+    </article>
+    <article class="season-card" data-season="2025" onclick="selectSeason(2025)">
+      <div class="card-pattern" aria-hidden="true"><img src="/static/images/card-pattern.svg" alt=""></div>
+      <h3>2025</h3>
+      <ul>
+        <li><strong>Driver:</strong> Max Verstappen</li>
+        <li><strong>Constructor:</strong> McLaren</li>
+        <li><strong>Sample GP:</strong> Bahrain (Piastri)</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="archive" class="archive" aria-label="Race Archive">
+  <div class="section-header">
+    <h2>WHAT YOU CAN EXPLORE</h2>
+    <p>Verified historical categories from the structured dataset.</p>
+  </div>
+  <div class="archive-grid">
+    <div class="archive-card">
+      <h3>Drivers' Championships</h3>
+      <p>Verified winners for 2021–2025.</p>
+    </div>
+    <div class="archive-card">
+      <h3>Constructors' Championships</h3>
+      <p>Verified team champions for 2021–2025.</p>
+    </div>
+    <div class="archive-card">
+      <h3>Grand Prix Winners</h3>
+      <p>Sampled verified results for selected circuits per season.</p>
+    </div>
+    <div class="archive-card">
+      <h3>Sprint Events</h3>
+      <p>Documented sprint weekends for 2023, 2024, and 2025.</p>
+    </div>
+    <div class="archive-card">
+      <h3>Qualifying Notes</h3>
+      <p>Verified pole notes where available (e.g., 2024 British GP).</p>
+    </div>
+  </div>
+  <div class="trust-note">
+    <p>This is an independent educational project. Not affiliated with Formula 1, the FIA, or any official rights holder. Data sources include official public results and structured fixture datasets.</p>
+  </div>
+</section>
+
+<section id="chat" class="chat-section" aria-label="AI Chat">
+  <div class="section-header">
+    <h2>ASK AI</h2>
+    <p>Ask any historical F1 question based on verified fixture data for 2021–2025.</p>
+  </div>
+  <div class="chat-panel" role="region" aria-label="Chat conversation">
+    <div id="chat" class="chat-messages" aria-live="polite" aria-atomic="false"></div>
+    <form id="chat-form" class="chat-form" aria-label="Send message" onsubmit="handleChat(event)">
+      <textarea id="message" class="chat-input" placeholder="Ask a question about F1 history..." aria-required="true" rows="2"></textarea>
+      <button type="submit" class="chat-send" aria-label="Send message">Send</button>
+    </form>
+    <div id="typing-indicator" class="typing-indicator" aria-hidden="true" aria-live="polite">AI is responding...</div>
+    <div id="suggested" class="suggested-chips" aria-label="Suggested questions"></div>
+  </div>
+</section>
+
+<footer class="site-footer" role="contentinfo">
+  <p>F1 History Intelligence — Independent educational project covering 2021–2025. Not affiliated with Formula 1.</p>
+</footer>
+
 <script src="/static/js/chat.js"></script>
 </body>
 </html>

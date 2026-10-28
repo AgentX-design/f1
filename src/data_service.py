@@ -44,6 +44,19 @@ class F1DataService:
             return notes
         return []
 
+    def standings_summary(self, season: int) -> Dict[str, Any]:
+        key = f"standings_{season}_summary"
+        if key in self.data:
+            return self.data[key]
+        return {
+            "drivers_champion": self.driver_champion(season),
+            "constructor_champion": self.constructor_champion(season),
+            "note": "Full grid table not loaded for this season."
+        }
+
+    def season_highlights(self, season: int) -> str:
+        return self.data.get("season_highlights", {}).get(str(season), "No summary available.")
+
     def available(self) -> bool:
         try:
             return os.path.exists(FIXTURES_PATH)

@@ -1,25 +1,78 @@
+# Python virtual environments
 .venv/
 venv/
 env/
+ENV/
+
+# Python cache files
 __pycache__/
 *.py[cod]
 *$py.class
-*.egg-info/
-dist/
-build/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Test and tool caches
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
 htmlcov/
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# Logs
 *.log
-.DS_Store
-Thumbs.db
+logs/
+
+# IDE and editor settings
 .vscode/
 .idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Local databases and vector indexes
+# Uncomment if these contain generated or private data
+# chroma_db/
+# *.sqlite
+# *.sqlite3
+# *.db
+
+# Local model and dataset cache directories
+# Uncomment if these contain large generated files
+# models/
+# cache/
+# .cache/
+
+# Secrets and private keys
+*.pem
+*.key
+secrets.json
+credentials.json
+# Generated vector database
 chroma_db/
-vector_store/
-embeddings_cache/
-data/raw/pdfs/
-data/processed/
-.env
+
+# Python and test caches
+__pycache__/
+.pytest_cache/
+
+# Local generated data (uncomment if not intended for GitHub)
+# data/processed/

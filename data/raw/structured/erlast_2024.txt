@@ -1,0 +1,3 @@
+HTTP 404: Not Found
+Source: https://ergast.com/api/f1/2024/results.json
+Note: API/access restricted in this environment.
