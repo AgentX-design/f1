@@ -1,0 +1,49 @@
+{
+  "seasons": [2021, 2022, 2023, 2024, 2025],
+  "sources": [
+    {"name": "Formula 1 Official Results", "url": "https://www.formula1.com/en/results/"},
+    {"name": "Jolpica-F1 API", "url": "https://jolpi.ca/"},
+    {"name": "FIA Official Documents", "url": "https://www.fia.com/"}
+  ],
+  "championships": {
+    "2021": {"driver_champion": "Max Verstappen", "constructor_champion": "Mercedes"},
+    "2022": {"driver_champion": "Max Verstappen", "constructor_champion": "Red Bull"},
+    "2023": {"driver_champion": "Max Verstappen", "constructor_champion": "Red Bull"},
+    "2024": {"driver_champion": "Max Verstappen", "constructor_champion": "McLaren"},
+    "2025": {"driver_champion": "Max Verstappen", "constructor_champion": "McLaren"}
+  },
+  "race_winners_sample": {
+    "2021": {
+      "Bahrain Grand Prix": "Lewis Hamilton",
+      "Abu Dhabi Grand Prix": "Max Verstappen"
+    },
+    "2022": {
+      "Bahrain Grand Prix": "Charles Leclerc",
+      "Abu Dhabi Grand Prix": "Max Verstappen"
+    },
+    "2023": {
+      "Bahrain Grand Prix": "Max Verstappen",
+      "Monaco Grand Prix": "Max Verstappen"
+    },
+    "2024": {"British Grand Prix": "Lewis Hamilton", "Abu Dhabi Grand Prix": "George Russell"},
+    "2025": {"Bahrain Grand Prix": "Oscar Piastri"}
+  },
+  "standings_2024": {
+    "drivers": [
+      {"position": 1, "driver": "Max Verstappen", "points": 437},
+      {"position": 2, "driver": "Lando Norris", "points": 374}
+    ],
+    "constructors": [
+      {"position": 1, "constructor": "McLaren", "points": 666},
+      {"position": 2, "constructor": "Red Bull", "points": 516}
+    ]
+  },
+  "qualifying_notes": {
+    "2024": {"British Grand Prix": "George Russell on pole"}
+  },
+  "sprint_notes": {
+    "2024": ["Chinese Grand Prix", "Miami Grand Prix", "Austria Grand Prix", "Belgium Grand Prix", "United States Grand Prix", "Brazil Grand Prix", "Qatar Grand Prix"],
+    "2023": ["Bahrain Grand Prix"],
+    "2025": ["Chinese Grand Prix"]
+  }
+}

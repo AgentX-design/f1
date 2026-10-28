@@ -1,0 +1,12 @@
+body { font-family: system-ui, -apple-system, sans-serif; background: #0b0c15; color: #e8e8e8; margin: 0; }
+header { background: linear-gradient(90deg, #111 0%, #1a1a2e 100%); padding: 1.5rem; border-bottom: 4px solid #e31818; }
+h1 { margin: 0; color: #fff; }
+p { margin: 0.5rem 0 0; color: #ccc; }
+#chat { min-height: 300px; padding: 1rem; border: 1px solid #1a1a2e; margin: 1rem; background: #12121d; border-radius: 8px; }
+.message { margin-bottom: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; }
+.user { background: #1a1a2e; color: #fff; }
+.assistant { background: #1e1e2e; color: #e8e8e8; border-left: 4px solid #e31818; }
+#message { width: 60%; padding: 0.75rem; border-radius: 4px; border: 1px solid #333; background: #181828; color: #fff; }
+button { padding: 0.75rem 1rem; background: #e31818; color: #fff; border: none; border-radius: 4px; }
+#suggested button { margin: 0.25rem; padding: 0.5rem 0.75rem; background: #1e1e2e; border: 1px solid #333; color: #fff; }
+@media (max-width: 600px) { #message { width: 75%; } }
